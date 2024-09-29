@@ -20,24 +20,35 @@ dostosuj poniższe style tak aby wczytywały się w powższym kodzie body {
 .gallery__image:hover {
   transform: scale(1.03);
 }
-/* .SimpleLightbox--visible {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(46, 47, 66, 0.8);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
+.sl-overlay {
+  background-color: rgba(46, 47, 66, 0.8) !important;
 }
 
-.SimpleLightbox--visible img {
-  width: 1128px !important;
-  height: 640px !important;
+.sl-image img {
+  max-width: 1280px !important;
+  max-height: 640px !important;
+  width: 100% !important;
+  height: auto !important;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+.sl-close {
+  color: #fff !important;
+  font-size: 32px !important;
+  font-weight: normal !important;
+}
+.sl-caption {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+.sl-counter {
+  font-family: Montserrat !important;
+  font-size: 16px !important;
+  color: #fff !important;
+}
+.sl-prev,
+.sl-next {
+  color: #fff !important;
+  font-size: 24px !important;
+  font-weight: normal !important;
+}
