@@ -42,7 +42,6 @@ dostosuj poniższe style tak aby wczytywały się w powższym kodzie body {
 }
 
 .sl-counter {
-  font-family: Montserrat !important;
   font-size: 16px !important;
   color: #fff !important;
 }
