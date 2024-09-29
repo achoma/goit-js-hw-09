@@ -1,0 +1,43 @@
+dostosuj poniższe style tak aby wczytywały się w powższym kodzie body {
+  background-color: #f5f5f5;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.gallery__image {
+  width: 360px;
+  height: 200px;
+
+  gap: 24px;
+  opacity: 0px;
+}
+.gallery__image:hover {
+  transform: scale(1.03);
+}
+/* .SimpleLightbox--visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(46, 47, 66, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.SimpleLightbox--visible img {
+  width: 1128px !important;
+  height: 640px !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
