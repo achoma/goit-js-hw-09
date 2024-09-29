@@ -34,8 +34,3 @@ color: #2e2f42;
 .feedback-form button:hover {
   background-color: #6c8cff; /
 }
-.feedback-form input[type='email']:hover,
-.feedback-form textarea:hover {
-  border: 1px solid #000;
-  border-radius: 8px; 
-}

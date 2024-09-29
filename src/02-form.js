@@ -1,13 +1,13 @@
 const storageKey = 'feedback-form-state';
 
 const form = document.querySelector('.feedback-form');
-const email = document.querySelector('[name="email"]');
-const message = document.querySelector('[name="message"]');
+const emailField = document.querySelector('[name="email"]');
+const messageField = document.querySelector('[name="message"]');
 
 const saveFormState = () => {
   const formData = {
-    email: email.value.trim(),
-    message: message.value.trim(),
+    email: emailField.value.trim(),
+    message: messageField.value.trim(),
   };
   localStorage.setItem(storageKey, JSON.stringify(formData));
 };
@@ -15,8 +15,8 @@ const loadFormState = () => {
   const savedData = localStorage.getItem(storageKey);
   if (savedData) {
     const { email, message } = JSON.parse(savedData);
-    email.value = email || '';
-    message.value = message || '';
+    emailField.value = email || '';
+    messageField.value = message || '';
   }
 };
 
@@ -28,10 +28,10 @@ const clearFormState = () => {
 const handleFormSubmit = event => {
   event.preventDefault();
 
-  if (email.value.trim() && message.value.trim()) {
+  if (emailField.value.trim() && messageField.value.trim()) {
     const formData = {
-      email: email.value.trim(),
-      message: message.value.trim(),
+      email: emailField.value.trim(),
+      message: messageField.value.trim(),
     };
 
     console.log(formData);
